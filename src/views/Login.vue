@@ -17,14 +17,14 @@
             <p>
               <input type="text" v-model="form.password" @keyup="show()" @keyup.enter="onSubmit" onfocus="this.type='password'" autocomplete="off" placeholder="密码" name="password" class="password" required="required" />
             </p>
-            <p>
+            <div>
               <span @click="help" class="help">忘记密码?</span>
               <button @click="onSubmit" v-if="loginTag" type="button" class="login_button">登&nbsp;&nbsp;录</button>
-              <button @click="onSubmit" v-else="loginTag" type="button" class="wraplogin login_button">登&nbsp;&nbsp;录</button>
+              <button @click="onSubmit" v-else type="button" class="wraplogin login_button">登&nbsp;&nbsp;录</button>
               <div class="autologin">
                 <input type="checkbox" name="" value="">下次自动登录
               </div>
-            </p>
+            </div>
           </form>
           <div v-show="helpBox" class="helpBox">
             <p>如需要帮助，请致电 <span>010-81133843</span> </p>
@@ -176,6 +176,16 @@ html,body{
   margin-bottom: 20px;
   position: relative;
 }
+.box form div{
+  margin-bottom: 20px;
+  position: relative;
+}
+.box form div .help{
+  float: right;
+  margin-top: -5px;
+  cursor:pointer;
+  color: #C1C9D6;
+}
 .box form p .help{
   float: right;
   margin-top: -5px;
@@ -262,6 +272,7 @@ input {
   cursor: pointer;
 }
 .autologin{
+  padding-top: 20px;
   text-align: center;
   color: #C5E3FD;
   opacity: 0.5;

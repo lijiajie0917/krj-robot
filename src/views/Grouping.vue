@@ -13,7 +13,7 @@
           <el-button class="buttnBlue" type="primary" @click="search">保存</el-button>
         </el-form>
       </div>
-      <div class="countentCen" v-for="(tableDataGroups,i) in tableData">
+      <div class="countentCen" v-for="(tableDataGroups,index) in tableData" :key="index">
         <div class="tableHeader">
           <span>组名：{{tableDataGroups.groupName}}</span>
           <span>数量：{{tableDataGroups.sum}}</span>

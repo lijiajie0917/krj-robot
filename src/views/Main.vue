@@ -64,7 +64,7 @@
               </el-checkbox-group>
             </template>
           </el-menu-item-group>
-          <div class="" v-else="disFlag">
+          <div class="" v-else>
             <router-link to="/Home">
               <el-menu-item class="treeview" index="2">
                 <span class="blueBorder"></span>

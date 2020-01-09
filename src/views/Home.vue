@@ -82,7 +82,7 @@
           </el-dialog>
         </div>
       </div>
-      <div class="countentWorpList" v-for="item2 in tableData2">
+      <div class="countentWorpList" v-for="item2 in tableData2" :key="item2.index">
         <template>
           <el-checkbox-group v-model="checkList2">
             <el-checkbox :label="item2.id"></el-checkbox>
