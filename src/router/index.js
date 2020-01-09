@@ -1,16 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Main from '@/components/Main'
-import Login from '@/components/Login' //登录
-import Home from '@/components/Home' //首页
+import Main from '@/views/Main'
+import Login from '@/views/Login' //登录
+import Home from '@/views/Home' //首页
 
-import Grouping from '@/components/Grouping' //分组管理
-import Equipment from '@/components/Equipment' //设备管理-机器人
-import Gateway from '@/components/Gateway' //设备管理-网关
-import Policelist from '@/components/Policelist' //报警管理-报警列表
-import Policeset from '@/components/Policeset' //报警管理-报警设置
-import Timing from '@/components/Timing' //定时管理
+import Grouping from '@/views/Grouping' //分组管理
+import Equipment from '@/views/Equipment' //设备管理-机器人
+import Gateway from '@/views/Gateway' //设备管理-网关
+import Policelist from '@/views/Policelist' //报警管理-报警列表
+import Policeset from '@/views/Policeset' //报警管理-报警设置
+import Timing from '@/views/Timing' //定时管理
 
 import {getUserInfo} from '@/assets/js/auth'
 

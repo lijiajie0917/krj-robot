@@ -6,26 +6,26 @@
       <div class="hRight">
         <el-dropdown v-show="dropown" trigger="click">
           <span class="el-dropdown-link">
-            <img class="listImg" src="../assets/list.png" alt="">
+            <img class="listImg" src="../assets/icon/list.png" alt="">
           </span>
           <el-dropdown-menu slot="dropdown">
             <router-link to="/Grouping">
-              <el-dropdown-item><img class="iconList2" src="../assets/1.png" alt="">分组管理</el-dropdown-item>
+              <el-dropdown-item><img class="iconList2" src="../assets/icon/1.png" alt="">分组管理</el-dropdown-item>
             </router-link>
             <router-link to="/Equipment">
-              <el-dropdown-item><img class="iconList2" src="../assets/2.png" alt="">设备管理</el-dropdown-item>
+              <el-dropdown-item><img class="iconList2" src="../assets/icon/2.png" alt="">设备管理</el-dropdown-item>
             </router-link>
             <router-link to="/Policelist">
-              <el-dropdown-item><img class="iconList2" src="../assets/3.png" alt="">报警管理</el-dropdown-item>
+              <el-dropdown-item><img class="iconList2" src="../assets/icon/3.png" alt="">报警管理</el-dropdown-item>
             </router-link>
             <router-link to="/Timing">
-              <el-dropdown-item><img class="iconList2" src="../assets/4.png" alt="">定时管理</el-dropdown-item>
+              <el-dropdown-item><img class="iconList2" src="../assets/icon/4.png" alt="">定时管理</el-dropdown-item>
             </router-link>
           </el-dropdown-menu>
         </el-dropdown>
-        <img class="mainPng" src="../assets/user.png" alt="">
+        <img class="mainPng" src="../assets/icon/user.png" alt="">
         <span class="userName">{{userName}}</span>
-        <img @click="logout" class="delPng" src="../assets/goback.png" alt="">
+        <img @click="logout" class="delPng" src="../assets/icon/goback.png" alt="">
       </div>
     </div>
     <!-- 左侧菜单 -->
@@ -34,7 +34,7 @@
         <!-- nav -->
         <div class="leftNav">
           <div class="headerLogo">
-            <img src="../assets/headerimg.png" alt="">
+            <img src="../assets/icon/headerimg.png" alt="">
             <b>科瑞杰云平台</b>
           </div>
         </div>
@@ -69,7 +69,7 @@
               <el-menu-item class="treeview" index="2">
                 <span class="blueBorder"></span>
                 <i>
-                  <img class="iconList" src="../assets/icon2.png" alt="">
+                  <img class="iconList" src="../assets/icon/icon2.png" alt="">
                 </i>
                 <span slot="title">首页</span>
               </el-menu-item>
@@ -78,7 +78,7 @@
               <el-menu-item class="treeview" index="3">
                 <span class="blueBorder"></span>
                 <i>
-                  <img class="iconList" src="../assets/icon3.png" alt="">
+                  <img class="iconList" src="../assets/icon/icon3.png" alt="">
                 </i>
                 <span slot="title">分组管理</span>
               </el-menu-item>
@@ -88,7 +88,7 @@
                 <template slot="title">
                   <span class="blueBorder"></span>
                   <i>
-                    <img class="iconList" src="../assets/icon5.png" alt="">
+                    <img class="iconList" src="../assets/icon/icon5.png" alt="">
                   </i>
                   <span>设备管理</span>
                 </template>
@@ -107,7 +107,7 @@
                 <template slot="title">
                   <span class="blueBorder"></span>
                   <i>
-                    <img class="iconList" src="../assets/icon5.png" alt="">
+                    <img class="iconList" src="../assets/icon/icon5.png" alt="">
                   </i>
                   <span>报警管理</span>
                 </template>
@@ -125,7 +125,7 @@
               <el-menu-item class="treeview" index="6">
                 <span class="blueBorder"></span>
                 <i>
-                  <img class="iconList" src="../assets/icon6.png" alt="">
+                  <img class="iconList" src="../assets/icon/icon6.png" alt="">
                 </i>
                 <span slot="title">定时管理</span>
               </el-menu-item>
@@ -514,7 +514,7 @@ img{vertical-align: top;}
          }
          .sidebar-menu>div>.router-link-active>li .blueBorder{
            display: block;
-           background-image: url("../assets/blue-border.png");
+           background-image: url("../assets/icon/blue-border.png");
             position: absolute;
             height: 56px;
             width: 3px;

@@ -2,7 +2,7 @@
   <div class="countentWorp">
     <div class="divActive divActiveRight divUser">
       <div class="shujuLog">
-        <img class="leftBorder" src="../assets/leftBorder.png" alt="">
+        <img class="leftBorder" src="../assets/icon/leftBorder.png" alt="">
         分组列表
         <el-form :model="form"  ref="form" label-width="100px" class="demo-ruleForm">
           <el-form-item prop="groupName">

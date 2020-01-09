@@ -4,8 +4,8 @@
       <!-- <p class="headerName">科瑞杰云平台</p> -->
       <div class="wrapBox">
         <div class="leftBox">
-          <img class="login1left" src="../assets/login1.png" alt="">
-          <img class="login2left" src="../assets/login2.png" alt="">
+          <img class="login1left" src="../assets/icon/login1.png" alt="">
+          <img class="login2left" src="../assets/icon/login2.png" alt="">
           <p class="leftBoxtitle">光伏板清扫机器人平台监控系统</p>
         </div>
         <div class="box">
@@ -227,7 +227,7 @@ input {
     color: #fff;
     margin-top:15px;
     background: transparent;
-    background-image: url('../assets/loginBtn.png');
+    background-image: url('../assets/icon/loginBtn.png');
     outline: none;
     cursor: pointer;
     font-size: 16px;
@@ -237,7 +237,7 @@ input {
   width: 304px;
   height: 37px;
   background: transparent;
-  background-image: url('../assets/oklogin.png');
+  background-image: url('../assets/icon/oklogin.png');
   border: none;
   color: #31374C;
   margin-top: 15px;

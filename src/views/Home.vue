@@ -2,7 +2,7 @@
   <div class="countentWorp">
     <div class="divActive divActiveRight">
       <div class="shujuLog">
-        <img class="leftBorder" src="../assets/leftBorder.png" alt="">
+        <img class="leftBorder" src="../assets/icon/leftBorder.png" alt="">
         设备列表
       </div>
       <div class="countentProject">
@@ -11,7 +11,7 @@
               <span>{{item.groupName}}</span>
             </div>
             <div class="text item">
-              <img class="robotImg" src="../assets/robot.png" alt="">
+              <img class="robotImg" src="../assets/icon/robot.png" alt="">
               <p class="conStatus">连接状态:
                 <img class="imgUrl" :src="item.conStatus == '0' ? imgUrl : imgUrl2 " alt="">
                 {{item.conStatus == '0' ? '断开' : '连接'}}</p>
@@ -22,12 +22,12 @@
         </el-card>
       </div>
       <div class="down" v-show="downFlg">
-        <img src="../assets/down.png" alt="">
+        <img src="../assets/icon/down.png" alt="">
       </div>
     </div>
     <div class="divActive divActiveRight">
       <div v-show="down" class="shujuLog">
-        <p class="headerName"><img class="leftBorder" src="../assets/leftBorder.png" alt="">{{headerName}}</p>
+        <p class="headerName"><img class="leftBorder" src="../assets/icon/leftBorder.png" alt="">{{headerName}}</p>
         <div class="shujulogRight">
           <!-- {{checkList2}} -->
           <el-checkbox v-model="checked" @change="checkedAll" >批量设置</el-checkbox>
@@ -91,9 +91,9 @@
         <div class="countLeft">
           <div :id="item2.nodeId" class="pie"></div>
           <div class="leftRightBtn">
-            <img @click="switchBtn(item2.gatewayId,item2.nodeId,item2.work_status,1)" src="../assets/leftImg.png" alt="">
+            <img @click="switchBtn(item2.gatewayId,item2.nodeId,item2.work_status,1)" src="../assets/icon/leftImg.png" alt="">
             <img @click="switchBtn(item2.gatewayId,item2.nodeId,item2.work_status)" class="countentImhg" :src="item2.work_status == '0' ? imgStart : imgStop " alt="">
-            <img @click="switchBtn(item2.gatewayId,item2.nodeId,item2.work_status,2)" src="../assets/rightImg.png" alt="">
+            <img @click="switchBtn(item2.gatewayId,item2.nodeId,item2.work_status,2)" src="../assets/icon/rightImg.png" alt="">
           </div>
           <p class="rst">
             <button @click="switchBtn(item2.gatewayId,item2.nodeId,2)" type="button" name="button">复位</button>
@@ -119,7 +119,7 @@
           <ul class="statusWrap">
             <li class="bottommargin">
               <p class="statusOne">
-                <img src="../assets/bounce.png" alt="">
+                <img src="../assets/icon/bounce.png" alt="">
                 运行速度
               </p>
               <p class="statusTwo">
@@ -137,7 +137,7 @@
             </li>
             <li>
               <p class="statusOne">
-                <img src="../assets/bounce.png" alt="">
+                <img src="../assets/icon/bounce.png" alt="">
                 当前工作时长
               </p>
               <p class="statusTwo">
@@ -147,7 +147,7 @@
             </li>
             <li class="bottommargin">
               <p class="statusOne">
-                <img src="../assets/bounce.png" alt="">
+                <img src="../assets/icon/bounce.png" alt="">
                 滚刷速度
               </p>
               <p class="statusTwo">
@@ -165,7 +165,7 @@
             </li>
             <li>
               <p class="statusOne">
-                <img src="../assets/bounce.png" alt="">
+                <img src="../assets/icon/bounce.png" alt="">
                 电池电量
               </p>
               <p class="statusTwo">
@@ -175,7 +175,7 @@
             </li>
             <li>
               <p class="statusOne">
-                <img src="../assets/bounce.png" alt="">
+                <img src="../assets/icon/bounce.png" alt="">
                 累计工作时长
               </p>
               <p class="statusTwo">
@@ -185,7 +185,7 @@
             </li>
             <li>
               <p class="statusOne">
-                <img src="../assets/bounce.png" alt="">
+                <img src="../assets/icon/bounce.png" alt="">
                 电箱温度
               </p>
               <p class="statusTwo">
@@ -195,7 +195,7 @@
             </li>
             <li>
               <p class="statusOne">
-                <img src="../assets/bounce.png" alt="">
+                <img src="../assets/icon/bounce.png" alt="">
                 累计行驶里程
               </p>
               <p class="statusTwo">
@@ -228,12 +228,12 @@ export default {
       pId:'',
       pType:'',
       dataList:[],
-      imgUrl:require('../assets/break.png'),
-      imgUrl2:require('../assets/connect.png'),
-      imgUrl3:require('../assets/white.png'),
-      imgUrl4:require('../assets/blue.png'),
-      imgStop:require('../assets/stop.png'),
-      imgStart:require('../assets/start.png'),
+      imgUrl:require('../assets/icon/break.png'),
+      imgUrl2:require('../assets/icon/connect.png'),
+      imgUrl3:require('../assets/icon/white.png'),
+      imgUrl4:require('../assets/icon/blue.png'),
+      imgStop:require('../assets/icon/stop.png'),
+      imgStart:require('../assets/icon/start.png'),
       headerName:'',
       msgFather:[],
       checkList:[],

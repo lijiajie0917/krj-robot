@@ -2,7 +2,7 @@
   <div class="countentWorp">
     <div class="divActive divActiveRight">
       <div class="shujuLog">
-        <img class="leftBorder" src="../assets/leftBorder.png" alt="">
+        <img class="leftBorder" src="../assets/icon/leftBorder.png" alt="">
         报警设置
         <el-form :model="form"  ref="form" label-width="111px" class="demo-ruleForm">
           <el-form-item label="按项目查询" prop="projectId">
