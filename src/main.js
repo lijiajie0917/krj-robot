@@ -25,6 +25,20 @@ Vue.use(httpPlugin)
 Vue.config.productionTip = false
 Vue.prototype.foo = 'bar'
 
+
+// 限制按钮点击事件，在结果返回以前不能继续点击
+Vue.directive('preventReClick', {
+  inserted(el, binding) {
+      el.addEventListener('click', () => {
+          if (!el.disabled) {
+              el.disabled = true
+              setTimeout(() => {
+                  el.disabled = false
+              }, binding.value || 3000)
+          }
+      })
+  }
+});
 // // 创建一个axios实例
 // var axios_instance = axios.create({
 // // config里面有这个transformRquest，这个选项会在发送参数前进行处理。

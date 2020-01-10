@@ -19,8 +19,8 @@
             </p>
             <div>
               <span @click="help" class="help">忘记密码?</span>
-              <button @click="onSubmit" v-if="loginTag" type="button" class="login_button">登&nbsp;&nbsp;录</button>
-              <button @click="onSubmit" v-else type="button" class="wraplogin login_button">登&nbsp;&nbsp;录</button>
+              <button @click="onSubmit" v-if="loginTag" type="button" class="login_button" v-preventReClick>登&nbsp;&nbsp;录</button>
+              <button @click="onSubmit" v-else type="button" class="wraplogin login_button" v-preventReClick>登&nbsp;&nbsp;录</button>
               <div class="autologin">
                 <input type="checkbox" name="" value="">下次自动登录
               </div>
